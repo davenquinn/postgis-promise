@@ -1,8 +1,18 @@
 {
   "name": "postgis-promise",
   "version": "1.0.0",
+  "scripts": {
+    "prepublish": "coffee -o lib -c index.coffee"
+  },
   "description": "A thin wrapper around pg-promise, allowing transparent deserialization of PostGIS types.",
-  "main": "index.coffee",
+  "main": "lib/index.js",
   "author": "Daven Quinn <dev@davenquinn.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "pg-postgis-types": "^3.0.0",
+    "wkx": "^0.4.2"
+  },
+  "peerDependencies": {
+    "pg-promise": "*"
+  }
 }
