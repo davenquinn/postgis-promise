@@ -1,0 +1,8 @@
+{
+  "name": "postgis-promise",
+  "version": "1.0.0",
+  "description": "A thin wrapper around pg-promise, allowing transparent deserialization of PostGIS types.",
+  "main": "index.coffee",
+  "author": "Daven Quinn <dev@davenquinn.com>",
+  "license": "MIT"
+}
