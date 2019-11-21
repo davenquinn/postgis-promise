@@ -1,5 +1,7 @@
 # postgis-promise
 
+[![npm version](https://badge.fury.io/js/postgis-promise.svg)](https://badge.fury.io/js/postgis-promise)
+
 This module is a transparent wrapper around the excellent
 [`pg-promise`](https://vitaly-t.github.io/pg-promise/index.html) library
 that allows the automatic parsing
