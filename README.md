@@ -10,11 +10,9 @@ as you would `pg-promise`:
 ```
 import PGPromise from 'postgis-promise';
 
-pgp = PGPromise({
-  geoJSON: true
-})
-db = pgp("postgres://...")
-res = await db.query("SELECT gold, seam::geometry FROM rocks")
+const pgp = PGPromise({geoJSON: true });
+const db = pgp("postgres://...");
+const res = await db.query("SELECT gold, seam::geometry FROM rocks");
 ```
 
 The library matches types to the correct OIDs
