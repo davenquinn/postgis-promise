@@ -4,8 +4,6 @@ This module is a transparent wrapper around the excellent
 [`pg-promise`](https://vitaly-t.github.io/pg-promise/index.html) library
 that allows the automatic parsing
 of several [PostGIS](https://postgis.net/) `Geometry` types to GeoJSON.
-This is an excellent 
-
 
 The library matches types to the correct OIDs
 on initialization, prior to any queries being run.
