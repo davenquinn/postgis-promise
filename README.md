@@ -4,6 +4,18 @@ This module is a transparent wrapper around the excellent
 [`pg-promise`](https://vitaly-t.github.io/pg-promise/index.html) library
 that allows the automatic parsing
 of several [PostGIS](https://postgis.net/) `Geometry` types to GeoJSON.
+Simply `npm install pg-promise postgis-promise` and then use the library
+as you would `pg-promise`:
+
+```
+import PGPromise from 'postgis-promise';
+
+pgp = PGPromise({
+  geoJSON: true
+})
+db = pgp("postgres://...")
+res = await db.query("SELECT gold, seam::geometry FROM rocks")
+```
 
 The library matches types to the correct OIDs
 on initialization, prior to any queries being run.
